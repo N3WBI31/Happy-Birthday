@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: whitesmoke;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .gif {
+      height: 100%;
+      width: 100%;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 1.5em;
+      color: #e94d58;
+      margin: 15px 0;
+    }
+
+    .btn-group {
+      width: 100%;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+    }
+
+    button {
+      width: 150px;
+      height: inherit;
+      color: white;
+      font-size: 1.2em;
+      border-radius: 30px;
+      outline: none;
+      cursor: pointer;
+      box-shadow: 0 2px 4px gray;
+      border: 2px solid #e94d58;
+      font-size: 1.2em;
+      background: #e94d58;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <h2 class="question">Hallo Pani!</h2>
+    <img class="gif" alt="gif" src="https://github.com/DzarelDeveloper/Img/blob/main/Halo.gif?raw=true">
+    <div class="btn-group">
+      <button class="yes-btn" id="first-btn">Iyahh</button>
+    </div>
+  </div>
+  <script>
+    const wrapper = document.querySelector(".wrapper");
+    const question = document.querySelector(".question");
+    const gif = document.querySelector(".gif");
+    const firstBtn = document.querySelector("#first-btn");
+
+    firstBtn.addEventListener("click", () => {
+      question.innerHTML = "Happy Birthday";
+      gif.src = "https://github.com/DzarelDeveloper/Img/blob/main/foryou.gif?raw=true";
+      firstBtn.innerHTML = "Maacih><";
+      firstBtn.removeEventListener("click", null);
+      firstBtn.addEventListener("click", () => {
+        window.location.href = "books.html";
+      });
+
+      firstBtn.style.marginLeft = "auto";
+      firstBtn.style.marginRight = "auto";
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <title>Happy Birthday</title> 
+  <link rel="stylesheet" href="style.css"> 
+  <style>
+  @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+* {
+  transition: all 0.2s ease-in-out;
+}
+
+body {
+  background: #FFFFE0;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  color: #fff; /* Improved text contrast */
+}
+
+.card {
+  background: #fdfdfd;
+  border-radius: 4px;
+  height: 85vh;
+  width: 80vw;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Adjusted box shadow for depth */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 1000px) {
+  .card {
+    flex-direction: row-reverse;
+  }
+  .card img.birthday {
+    width: 100%;
+    max-width: 50vw;
+    max-height: unset;
+  }
+}
+
+@media only screen and (max-height: 640px) {
+  .card {
+    flex-direction: row-reverse;
+  }
+  .card img.birthday {
+    width: 100%;
+    max-width: 50vw;
+    max-height: unset;
+  }
+}
+
+img.birthday {
+  max-height: 40vh;
+}
+
+.text {
+  padding: 1em;
+  color: #333; /* Adjusted text color */
+}
+
+.muted {
+  opacity: 0.8;
+}
+
+.space {
+  height: 100px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+  </style> 
+ </head> 
+ <body> 
+  <div class="card"> 
+   <img src="https://github.com/DzarelDeveloper/Img/blob/main/pani.jpg?raw=true" alt="birthday" class="birthday"> 
+   <div class="text"> 
+    <h1>Happy Birthday Pani!</h1> 
+    <p>Hari ini adalah hari untuk merayakan keberadaan luar biasa Kamu. Dalam perjalanan hidup, aku bersyukur memilikimu di sisiku. <br><br> Di antara lautan, galaksi, dan bulan, aku beruntung bisa menginjak daratan yang sama, aku bermimpi di bawah bintang yang sama denganmu. <br><br> Kita telah melintasi lautan kenangan, menjelajahi galaksi pengalaman, dan menikmati keindahan bulan bersama-sama. Aku merasa sangat beruntung bisa berbagi petualangan tak terlupakan dengan Kamu. <br><br> Setiap langkah yang kita ambil bersama adalah bagian dari perjalanan yang membentuk kisah unik kita. Senyumanmu menerangi setiap hari, menambah kehangatan pada lingkungan sekitar. <br><br> Semoga tahun ini menjadi babak yang penuh dengan kebahagiaan, kesuksesan, dan cinta. Terima kasih telah menjadi bagian dari kisah hidupku. Selamat ulang tahun, dan semoga setiap hari Kamu dipenuhi dengan kegembiraan dan pencapaian yang luar biasa! 🎉🎂</p> 
+    <p class="muted">- From Me -</p> 
+   </div> 
+  </div> 
+ </body>
+</html>
